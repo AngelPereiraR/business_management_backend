@@ -91,12 +91,10 @@ public class OrderProductController {
 		}
 		
 		if(quantities == null) {
-			System.out.println("a");
 			quantities = new ArrayList<String>();
 			quantities.add(quantity);
 			orderProduct.setQuantities(quantities);
 		} else {
-			System.out.println("b");
 			quantities.add(quantity);
 			orderProduct.setQuantities(quantities);
 		}
